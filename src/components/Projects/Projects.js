@@ -1,96 +1,105 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+  import React from "react";
+  import { Container, Row, Col } from "react-bootstrap";
+  import ProjectCard from "./ProjectCards";
+  import Particle from "../Particle";
+  import qs from "../../Assets/Projects/qs-outreach.png";
+  import whoz from "../../Assets/Projects/whoz.png";
+  import hera from "../../Assets/Projects/hera.png";
+  import intelparcel from "../../Assets/Projects/intelparcel.png";
+  import cryptosook from "../../Assets/Projects/cryptosook.jpg";
+  import quaestor from "../../Assets/Projects/quaestor.jpg";
+  import farminone from "../../Assets/Projects/farminone.png";
 
-function Projects() {
-  return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
+  function Projects() {
+    return (
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <h1 className="project-heading">
+            My Recent <strong className="purple">Works </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Here are a few projects I've worked on recently.
+          </p>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={intelparcel}
+                isBlog={false}
+                title="IntelParcel"
+                description="IntelParcel is revolutionizing logistics by connecting distributors, operators, merchants, property hosts, couriers, and delivery agents through an innovative platform. IntelParcel provide scalable, cost-effective solutions for e-commerce businesses, enhancing customer experiences with smart lockers, vending machines, and optimized warehouses."
+                // ghLink="https://github.com/soumyajit4419/Chatify"
+                demoLink="https://intelparcel.com/"
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={farminone}
+                isBlog={false}
+                title="Farm In One"
+                description="Farm in ONE provides a solution that directly contributes to maximising a primary producer’s yields and profitability and minimizes the producer's labor input, environmental demands and potential damage by automating, managing and recording all farm tasks."
+                // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+                demoLink="https://farminone.com.au/"
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={hera}
+                isBlog={false}
+                title="Hera Solutions (Associate App)"
+                description="Hera is an all-in-one software platform designed to optimize delivery company operations. It streamlines staff scheduling, performance tracking, fleet management, and compliance with features like automated coaching, vehicle photo logs with AI evaluation, and powerful dashboards. Hera ensures efficiency by automating daily tasks, consolidating staff communication, and providing real-time insights into company performance. With upcoming features like inventory management and customizable checklists, Hera is an essential tool for improving productivity, safety, and overall business performance."
+                // ghLink="https://github.com/soumyajit4419/Editor.io"
+                demoLink="https://editor.soumya-jit.tech/"              
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={qs}
+                isBlog={false}
+                title="QS Outreach"
+                description="QS Outreach is a global initiative by Quacquarelli Symonds (QS) aimed at connecting students with educational opportunities and resources to help them succeed in higher education. The program offers guidance on university selection, scholarship opportunities, and career paths, while also organizing events, workshops, and networking opportunities. QS Outreach helps students gain access to valuable information about studying abroad and making informed decisions about their academic and professional futures, all while fostering connections between students, universities, and industry professionals worldwide."
+                // ghLink="https://github.com/soumyajit4419/Plant_AI"
+                demoLink="https://outreach.qs.com/v3new"
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
-        </Row>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={whoz}
+                isBlog={false}
+                title="WHOZ"
+                description="Whoz is a social platform that helps people connect in real life, not just online. Users can organize events, meet like-minded people, and grow their network effortlessly. It’s great for organizations, conferences, and communities, offering easy event coordination and interest-based networking. A key feature, Whozcal, lets users share their availability for social or professional meetups, making spontaneous connections simple. With a user-friendly design and mobile access, Whoz makes meeting and engaging with others easier than ever"
+                // ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+                demoLink="https://whozin.com/"      
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={quaestor}
+                isBlog={false}
+                title="Quaestor Coin"
+                description="Quaestor Solutions was a cross-platform cryptocurrency wallet built with the Electron framework, designed to help users securely manage their digital assets across multiple devices. The app prioritized a user-friendly experience and robust security features, ensuring efficient and accessible cryptocurrency transactions for all."
+                // ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+                demoLink="https://quaestor.io/"      
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={cryptosook}
+                isBlog={false}
+                title="CryptoSook - Crypto Currency Exchange"
+                description="CryptoSook is a cryptocurrency exchange that allows users to buy and sell crypto quickly. The platform provides deposit options via wire transfer and credit card. The service offers the best crypto-to-crypto rates and supports over 140 cryptocurrencies for exchange."
+                // ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+                // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
-  );
-}
+    );
+  }
 
-export default Projects;
+  export default Projects;
