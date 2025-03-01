@@ -11,7 +11,23 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #778DA9;
+  --preloader-bg: #0D1B2A;
+  --scrollbar-track: #0D1B2A;
+  --scrollbar-thumb: #778DA9;
+  --scrollbar-thumb-hover: #778DA9;
+  --navbar-bg: #1B263B;
+  --navbar-shadow: #0D1B2A;
+  --navbar-toggler-color: #778DA9;
+  --nav-hover-bg: #778DA9;
+  --main-name-color: #778DA9;
+  --typewriter-wrapper: #778DA9;
+  --typewriter-cursor: #778DA9;
+  --social-icons-bg: #778DA9;
+  --social-icons-hover: #415A77;
+  --social-icons-shadow: #415A77;
+  --footer-bg: #0D1B2A;
+  --blockquote-color: #1B263B;
 }
 
 .purple {
@@ -32,7 +48,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: var(--preloader-bg);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +73,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--scrollbar-track);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--scrollbar-thumb);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--scrollbar-thumb-hover);
   border-radius: 12px;
 }
 
@@ -76,9 +92,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: var(--navbar-bg) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px var(--navbar-shadow) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +113,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--navbar-toggler-color) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,7 +160,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: var(--navbar-bg) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -194,7 +210,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--nav-hover-bg);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -257,7 +273,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.png); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -281,17 +297,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--main-name-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--typewriter-wrapper) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--typewriter-cursor) !important;
 }
 
 @media (max-width: 767px) {
@@ -358,7 +374,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--social-icons-bg) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -371,7 +387,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #0D1B2A;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +395,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px var(--social-icons-shadow);
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--social-icons-hover);
+  box-shadow: 0 0 5px var(--social-icons-hover);
+  text-shadow: 0 0 2px var(--social-icons-hover);
 }
 
 .social-icons {
@@ -395,14 +411,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #1B263B !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--footer-bg);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -439,7 +455,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: var(--blockquote-color) !important;
 }
 /* --------- */
 /* Projects */
@@ -460,7 +476,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px #0D1B2A !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +486,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #0D1B2A !important;
 }
 
 .blog-card {
@@ -483,7 +499,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px #0D1B2A !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -501,7 +517,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px #1B263B !important;
 }
 
 .card-img-top {
@@ -518,14 +534,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #1B263B !important;
+  border-color: #1B263B !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #1B263B !important;
+  border-color: #1B263B !important;
 }
 .btn:focus {
   outline: none !important;
@@ -574,7 +590,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid #0D1B2A) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -702,8 +718,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #0D1B2A !important;
+  border-color: #0D1B2A !important;
 }
 
 .animate-like {
@@ -727,7 +743,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #0D1B2A !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +751,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #0D1B2A !important;
+  border-color: #0D1B2A !important;
 }
 .fork-btn-inner::after {
   display: none !important;
