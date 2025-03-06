@@ -51,7 +51,7 @@
                 title="Hera Solutions (Associate App)"
                 description="Hera is an all-in-one software platform designed to optimize delivery company operations. It streamlines staff scheduling, performance tracking, fleet management, and compliance with features like automated coaching, vehicle photo logs with AI evaluation, and powerful dashboards. Hera ensures efficiency by automating daily tasks, consolidating staff communication, and providing real-time insights into company performance. With upcoming features like inventory management and customizable checklists, Hera is an essential tool for improving productivity, safety, and overall business performance."
                 // ghLink="https://github.com/soumyajit4419/Editor.io"
-                demoLink="https://editor.soumya-jit.tech/"              
+                demoLink="https://www.hera.app/"              
               />
             </Col>
 
