@@ -13,6 +13,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { MdOutlineRateReview } from "react-icons/md";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -59,30 +60,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>  */}
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
-{/*
+
             <Nav.Item>
+              <Nav.Link as={Link} to="/testimonials" onClick={() => updateExpanded(false)}>
+                <MdOutlineRateReview style={{ marginBottom: "2px" }} /> Testimonials
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
