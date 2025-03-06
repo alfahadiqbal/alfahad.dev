@@ -454,6 +454,20 @@ button:focus {
 .blockquote-footer {
   color: var(--blockquote-color) !important;
 }
+
+.footer-email {
+  color: var(--imp-text-color) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.footer-email:hover {
+  color: var(--social-icons-hover) !important;
+  transform: translateY(-2px) !important;
+}
+
 /* --------- */
 /* Projects */
 /* --------- */

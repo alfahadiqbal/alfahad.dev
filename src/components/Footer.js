@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Footer() {
   let date = new Date();
@@ -14,7 +15,12 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Al Fahad</h3>
+          <h3>
+            <a href="mailto:contact@alfahad.dev" className="footer-email">
+              <MdEmail style={{ marginRight: "5px" }} />
+              contact@alfahad.dev
+            </a>
+          </h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Al Fahad</h3>
