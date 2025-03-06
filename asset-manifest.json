@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ad0a513.css",
-    "main.js": "/static/js/main.7b06327d.js",
+    "main.css": "/static/css/main.0d02bcb5.css",
+    "main.js": "/static/js/main.de1a998f.js",
     "static/js/415.fc063c41.chunk.js": "/static/js/415.fc063c41.chunk.js",
     "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
     "static/media/home-main.svg": "/static/media/home-main.6705662eb3844a30a05474f7e2c017e5.svg",
@@ -13,13 +13,13 @@
     "static/media/quaestor.jpg": "/static/media/quaestor.b603a519dc47172c79b5.jpg",
     "static/media/pre.svg": "/static/media/pre.3949c02d7a3de776a25c.svg",
     "index.html": "/index.html",
-    "main.1ad0a513.css.map": "/static/css/main.1ad0a513.css.map",
-    "main.7b06327d.js.map": "/static/js/main.7b06327d.js.map",
+    "main.0d02bcb5.css.map": "/static/css/main.0d02bcb5.css.map",
+    "main.de1a998f.js.map": "/static/js/main.de1a998f.js.map",
     "415.fc063c41.chunk.js.map": "/static/js/415.fc063c41.chunk.js.map",
     "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ad0a513.css",
-    "static/js/main.7b06327d.js"
+    "static/css/main.0d02bcb5.css",
+    "static/js/main.de1a998f.js"
   ]
 }
