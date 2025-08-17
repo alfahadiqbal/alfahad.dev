@@ -4,7 +4,8 @@ import { io } from "socket.io-client";
 import { FaUserFriends, FaCircle } from "react-icons/fa";
 
 // Connect React app to NestJS backend
-const socket = io("http://localhost:3001"); 
+// https://alfa-be-hgkv.onrender.com
+const socket = io("https://api.alfahad.dev/"); 
 
 export default function ConnectedUsers() {
   const [count, setCount] = useState(0);
