@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -29,6 +30,20 @@ function App() {
 
   return (
     <Router>
+      <Helmet>
+        <title>Al Fahad | Portfolio</title>
+        <meta name="description" content="Al Fahad is a software developer. Learn more about Al Fahad's work, projects, and contact information." />
+        <meta name="keywords" content="Al Fahad, software developer, portfolio, contact" />
+        <meta property="og:title" content="Al Fahad | Portfolio" />
+        <meta property="og:description" content="Al Fahad is a software developer." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://alfahad.dev" />
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoplvFXt0YFRtiWzLUD4PN_iMU1aFIa8hjg&s" />
+        <meta property="og:see_also" content="https://www.linkedin.com/in/al-fahad/" />
+        <meta property="og:see_also" content="https://github.com/alfahadiqbal" />
+        <meta property="og:see_also" content="https://stackoverflow.com/users/6405655/al-fahad" />
+        <meta property="og:see_also" content="https://medium.com/@alfahadiqbal" />
+      </Helmet>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
