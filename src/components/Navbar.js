@@ -14,8 +14,8 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { MdOutlineRateReview } from "react-icons/md";
+import ConnectedUsers from "./ConnectedUsers";
 
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -70,6 +70,9 @@ function NavBar() {
               <Nav.Link as={Link} to="/testimonials" onClick={() => updateExpanded(false)}>
                 <MdOutlineRateReview style={{ marginBottom: "2px" }} /> Testimonials
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="d-flex align-items-center ms-3">
+              <ConnectedUsers />
             </Nav.Item>
 
             {/* <Nav.Item>
